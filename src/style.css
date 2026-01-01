@@ -1,0 +1,18 @@
+/* Arc Browser Visuals */
+body {
+    background: radial-gradient(at top left, #1a1a1e, #09090b);
+    height: 100vh; display: flex; align-items: center; justify-content: center;
+    color: white; margin: 0; font-family: sans-serif;
+}
+
+.app-container {
+    width: 95vw; height: 90vh;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+}
+
+.sidebar { width: 250px; border-right: 1px solid rgba(255,255,255,0.1); padding: 20px; }
+.hidden { display: none !important; }
