@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Arc</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div id="login-overlay">
+        <div class="login-card">
+            <img src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002.svg" width="50">
+            <h2>Gemini Arc</h2>
+            <button class="auth-btn" id="google-login">Continue with Google</button>
+            <button class="auth-btn" id="github-login">Continue with GitHub</button>
+        </div>
+    </div>
+
+    <div class="app-container hidden" id="app">
+        <aside class="sidebar">
+            <button class="new-chat-btn">+ New Chat</button>
+        </aside>
+        <main class="chat-main">
+            <div id="chat-box" class="messages-container"></div>
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Ask Gemini...">
+            </div>
+        </main>
+    </div>
+
+    <script type="module" src="src/auth.js"></script>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
