@@ -1,0 +1,3 @@
+# setup
+
+'npm init -y'
